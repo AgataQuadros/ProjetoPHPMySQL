@@ -1,6 +1,6 @@
 <?php
 
-header("Content-Type: aplication/jason");
+header("Content-Type: aplication/json");
 
 include("../conexao/conexao.php");
 

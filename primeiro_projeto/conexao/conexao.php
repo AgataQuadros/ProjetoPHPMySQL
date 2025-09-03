@@ -1,12 +1,13 @@
 <?php 
-$host = "localhost";
+// configuração de conexão
+$host = "localhost"; // 
 $user = "root";
 $pass = "";
-$bd = "tarefas_bd";
+$bd = "tarefa_bd";
 
 $conn = new mysqli($host, $user, $pass, $bd);
 
-if ($conn->connection_error) {
+if ($conn->connect_error) {
     die("ERRO NA CONEXÃO: " . $conn->connection_error);
 }
 
